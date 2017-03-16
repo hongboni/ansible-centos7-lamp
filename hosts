@@ -1,10 +1,12 @@
 #The site wide list of hosts
 
+#ansible_user is 'root' initially, after first run, change it to 'centos'
+
 [dbservers]
-db_host ansible_host=192.168.1.110 ansible_port=22 ansible_user=centos ansible_become=true
+db_host ansible_host=192.168.1.110 ansible_port=22 ansible_user=root ansible_become=true
 
 [webservers]
-web_host1 ansible_host=192.168.1.120 ansible_port=22 ansible_user=centos ansible_become=true
-web_host2 ansible_host=192.168.1.130 ansible_port=22 ansible_user=centos ansible_become=true
+web_host1 ansible_host=192.168.1.120 ansible_port=22 ansible_user=root ansible_become=true
+web_host2 ansible_host=192.168.1.130 ansible_port=22 ansible_user=root ansible_become=true
 
 
