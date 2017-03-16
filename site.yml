@@ -1,0 +1,16 @@
+---
+- hosts: all
+  roles:
+    - role: c7.common
+      tags: ['common']
+
+- hosts: dbservers
+  roles:
+    - role: db
+      tags: ['db']
+
+- hosts: webservers
+  roles:
+    - role: web
+      tags: ['web']
+

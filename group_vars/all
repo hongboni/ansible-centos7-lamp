@@ -1,0 +1,18 @@
+---
+# Variables listed here are applicable to all host groups
+
+httpd_port: 80
+
+# The variables file used by the playbooks in the dbservers group.
+# These don't have to be explicitly imported by vars_files: they are autopopulated.
+
+mysql_root_password: mysql3306
+
+lamp_on_same_host: no
+mysql_host: 192.168.1.110
+mysql_port: 3306
+
+dbuser: lamp
+dbname: lamp
+upassword: lamp3306
+
